@@ -6,9 +6,9 @@ using System.Text.Json;
 public class StoryNode
 {
     public int Id { get; set; }
+    public string Title { get; set; }
     public string Text { get; set; }
-    public int? NextLeft { get; set; }
-    public int? NextRight { get; set; }
+    public List<int> NextIds { get; set; } = new List<int>();
 }
 
 class Program
@@ -44,14 +44,35 @@ class Program
             Console.WriteLine();
             Console.WriteLine(current.Text);
 
-            if (current.NextLeft == null && current.NextRight == null)
-                break; // End of story
+            if (current.NextIds == null || current.NextIds.Count == 0)
+                return; // End of story
 
-            Console.Write("Choice (left/right): ");
+            int choiceCounter = 1;
+
+            Dictionary<int, int> choiceMap = new Dictionary<int, int>();
+
+            foreach (var x in current.NextIds)
+            {
+                StoryNode NodeTitle = story.Find(s => s.Id == x);
+                choiceMap.Add(choiceCounter, NodeTitle.Id);
+                Console.Write($"{choiceCounter} {NodeTitle.Title} \t");
+                choiceCounter++;
+
+            }
+
+            Console.WriteLine("Choose choice!: ");
             string choice = Console.ReadLine()?.ToLower();
 
-            int? nextId = choice == "left" ? current.NextLeft : current.NextRight;
-            current = story.Find(s => s.Id == nextId);
+            if (int.TryParse(choice, out int choiceId))
+            {
+                if (choiceMap[choiceId] != null)
+                {
+                    current = story.Find(s => s.Id == choiceMap[choiceId]);
+                }
+
+            }
+
+
 
             if (current == null)
             {

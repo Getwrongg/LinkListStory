@@ -1,92 +1,500 @@
 [
   {
     "id": 1,
-    "text": "You wake up in a dark forest. Do you take the narrow path or head towards the river?",
-    "nextLeft": 2,
-    "nextRight": 3
+    "title": "The Dream Begins",
+    "text": "You're a young racing driver who just got the call of a lifetime - a chance to test drive for a Formula 1 team! As you arrive at the state-of-the-art facility, you see two paths: the simulator room where other drivers are training, or the garage where the actual F1 car awaits. Where do you go first?",
+    "nextIds": [ 2, 3 ]
   },
   {
     "id": 2,
-    "text": "You follow the narrow path and find an old cabin. Do you go inside or continue walking?",
-    "nextLeft": 4,
-    "nextRight": 5
+    "title": "Simulator Training",
+    "text": "You enter the high-tech simulator room. The chief engineer explains you'll be testing on three different tracks. Which circuit do you want to master first?",
+    "nextIds": [ 4, 5, 6 ]
   },
   {
     "id": 3,
-    "text": "You reach the river and see a small boat. Do you cross the river or walk along its bank?",
-    "nextLeft": 6,
-    "nextRight": 7
+    "title": "The Real Machine",
+    "text": "You walk into the garage and see the gleaming F1 car. The mechanics are making final adjustments. The team principal approaches and offers you a choice: start with a systems check to understand the car, or jump straight into a practice session?",
+    "nextIds": [ 7, 8 ]
   },
   {
     "id": 4,
-    "text": "Inside the cabin, you find food and a map! Do you follow the map or rest for the night?",
-    "nextLeft": 8,
-    "nextRight": 9
+    "title": "Monaco Simulation",
+    "text": "You're racing through the narrow streets of Monaco in the simulator. The precision required is incredible! You're approaching the famous Casino corner when you realize you can either brake early for safety or push the limits for a faster lap time. What's your approach?",
+    "nextIds": [ 9, 10 ]
   },
   {
     "id": 5,
-    "text": "You continue walking and find a wolf blocking your path. Do you fight it or run?",
-    "nextLeft": 10,
-    "nextRight": 11
+    "title": "Silverstone Simulation",
+    "text": "The high-speed corners of Silverstone test your courage. As you approach the legendary Copse corner at 180 mph, you must decide: take the racing line that other drivers use, or try an unconventional line that might give you an advantage?",
+    "nextIds": [ 11, 12 ]
   },
   {
     "id": 6,
-    "text": "You use the boat to cross the river safely. On the other side, you see a village. Do you enter or explore the woods?",
-    "nextLeft": 12,
-    "nextRight": 13
+    "title": "Spa-Francorchamps Simulation",
+    "text": "You're flying through the Ardennes forest circuit. The famous Eau Rouge-Raidillon sequence approaches - one of F1's most challenging corners. Do you lift off the throttle slightly for safety, or keep it flat out like the legends?",
+    "nextIds": [ 13, 14 ]
   },
   {
     "id": 7,
-    "text": "You walk along the riverbank and find a fisherman who offers help. Do you trust him or decline?",
-    "nextLeft": 14,
-    "nextRight": 15
+    "title": "Systems Check",
+    "text": "You spend time learning every button, switch, and setting on the steering wheel. The complexity is overwhelming - over 20 different controls! The engineer asks which system you want to focus on mastering first: energy recovery (ERS), differential settings, or brake balance?",
+    "nextIds": [ 15, 16, 17 ]
   },
   {
     "id": 8,
-    "text": "Following the map, you find hidden treasure! The End.",
-    "nextLeft": null,
-    "nextRight": null
+    "title": "First Practice",
+    "text": "You climb into the cockpit for your first real F1 experience. The engine fires up with a deafening roar. As you pull out of the garage, you see the track stretching ahead. Do you start with slow installation laps to get comfortable, or push immediately to impress the team?",
+    "nextIds": [ 18, 19 ]
   },
   {
     "id": 9,
-    "text": "You rest for the night, but the cabin owner returns and chases you out! The End.",
-    "nextLeft": null,
-    "nextRight": null
+    "title": "Monaco Master",
+    "text": "Your cautious approach through Casino corner pays off! You maintain perfect control and set a competitive time. The simulator instructor is impressed and suggests you try the full Monaco race simulation. Do you accept the challenge or move to a different track?",
+    "nextIds": [ 20, 21 ]
   },
   {
     "id": 10,
-    "text": "You fight the wolf and win, but you're injured. The End.",
-    "nextLeft": null,
-    "nextRight": null
+    "title": "Monaco Crash",
+    "text": "You pushed too hard! The car clips the barrier and the simulation ends. The instructor shakes his head but offers encouragement: 'Even Senna crashed here in practice. Try again, but remember - Monaco rewards patience.' Do you retry Monaco or move to an easier track?",
+    "nextIds": [ 22, 23 ]
   },
   {
     "id": 11,
-    "text": "You run away, but get lost in the forest. The End.",
-    "nextLeft": null,
-    "nextRight": null
+    "title": "Racing Line Success",
+    "text": "Following the traditional racing line through Copse, you nail the corner perfectly! Your lap time improves significantly. The simulator shows you're now only 2 seconds off the pole position time. Do you attempt another flying lap to improve further, or switch to race simulation?",
+    "nextIds": [ 24, 25 ]
   },
   {
     "id": 12,
-    "text": "You enter the village, meet kind locals, and find safety. The End.",
-    "nextLeft": null,
-    "nextRight": null
+    "title": "Experimental Line",
+    "text": "Your unconventional line through Copse surprises everyone - including yourself! You've found a tenth of a second advantage that even the engineers didn't expect. They want to analyze your technique. Do you share your discovery with the team or keep it as your secret weapon?",
+    "nextIds": [ 26, 27 ]
   },
   {
     "id": 13,
-    "text": "You explore the woods and find a magical tree. The End.",
-    "nextLeft": null,
-    "nextRight": null
+    "title": "Eau Rouge Caution",
+    "text": "Your slight lift through Eau Rouge keeps you safe, and you exit cleanly onto the Kemmel straight. While not the fastest approach, it shows maturity. The chief engineer notes your decision-making skills. He offers you a choice for the next simulation: wet weather conditions or night racing?",
+    "nextIds": [ 28, 29 ]
   },
   {
     "id": 14,
-    "text": "You trust the fisherman, who gives you food and directions. The End.",
-    "nextLeft": null,
-    "nextRight": null
+    "title": "Flat Out Hero",
+    "text": "You keep the throttle pinned through Eau Rouge! The car dances on the edge of control but you make it through. Your bravery impresses the team, but the telemetry shows the car was at its absolute limit. Do you continue with this aggressive style or dial it back for consistency?",
+    "nextIds": [ 30, 31 ]
   },
   {
     "id": 15,
-    "text": "You decline his help and starve on your journey. The End.",
-    "nextLeft": null,
-    "nextRight": null
+    "title": "ERS Master",
+    "text": "You dive deep into the Energy Recovery System, learning how to harvest and deploy electric power strategically. This knowledge will be crucial for wheel-to-wheel combat and qualifying laps. The team is impressed with your technical understanding. Do you now focus on racecraft training or continue with more technical learning?",
+    "nextIds": [ 32, 33 ]
+  },
+  {
+    "id": 16,
+    "title": "Differential Expert",
+    "text": "Mastering the differential settings gives you incredible control over the car's behavior in corners. You can now adjust the car's balance mid-corner like a true professional. The chief engineer suggests you test this knowledge: do you try a challenging corner sequence or practice overtaking maneuvers?",
+    "nextIds": [ 34, 35 ]
+  },
+  {
+    "id": 17,
+    "title": "Brake Balance Pro",
+    "text": "Understanding brake balance transforms your driving. You can now trail-brake into corners and adjust the car's rotation perfectly. This skill will be essential for overtaking. Speaking of which, another driver challenges you to a head-to-head battle. Do you accept or continue solo practice?",
+    "nextIds": [ 36, 37 ]
+  },
+  {
+    "id": 18,
+    "title": "Steady Progress",
+    "text": "Your methodical approach impresses the team. You gradually build speed while learning the car's limits safely. After 10 laps, you're within 3 seconds of the pole time - excellent for a first session! The team principal offers you a choice: continue building speed or focus on race pace?",
+    "nextIds": [ 38, 39 ]
+  },
+  {
+    "id": 19,
+    "title": "Impressive Speed",
+    "text": "You attack the track immediately! Your natural speed shines through, but you have a few scary moments. The team is excited by your pace but concerned about consistency. Do you continue pushing the limits or work on consistency and race preparation?",
+    "nextIds": [ 40, 41 ]
+  },
+  {
+    "id": 20,
+    "title": "Monaco Grand Prix Sim",
+    "text": "You're starting the full Monaco Grand Prix simulation from 8th position. The 78-lap race begins, and you're immediately under pressure from faster cars behind. Your first strategic decision: do you defend your position aggressively or let faster cars pass and follow them to learn?",
+    "nextIds": [ 42, 43 ]
+  },
+  {
+    "id": 21,
+    "title": "Track Change",
+    "text": "You decide Monaco is enough for now and switch to Monza - the Temple of Speed. The long straights and heavy braking zones are completely different from Monaco's tight corners. Your first challenge: the Variante del Rettifilo chicane at the end of the main straight. Do you brake early or late?",
+    "nextIds": [ 44, 45 ]
+  },
+  {
+    "id": 22,
+    "title": "Monaco Redemption",
+    "text": "Returning to Monaco with newfound respect for the circuit, you take a more measured approach. This time, you complete a clean lap and gradually build confidence. Your patience pays off as you set a respectable time. The team notes your ability to learn from mistakes. Ready for the next challenge?",
+    "nextIds": [ 46, 47 ]
+  },
+  {
+    "id": 23,
+    "title": "Easier Challenge",
+    "text": "You switch to the wide, forgiving Portimão circuit. The flowing corners and multiple racing lines give you confidence. You're immediately more comfortable and start setting competitive times. The Portuguese track teaches you about weight transfer and racing lines. Which aspect do you want to focus on?",
+    "nextIds": [ 48, 49 ]
+  },
+  {
+    "id": 24,
+    "title": "Flying Lap Attempt",
+    "text": "You go for another qualifying simulation lap at Silverstone. This time, everything clicks! You improve by another half-second and are now just 1.5 seconds off pole position. The team erupts in celebration - this is exceptional for a first-time F1 driver. Do you attempt one final push lap or preserve the car for race simulation?",
+    "nextIds": [ 50, 51 ]
+  },
+  {
+    "id": 25,
+    "title": "Race Simulation",
+    "text": "You switch to race simulation mode, focusing on consistent lap times over 20 laps. This teaches you about tire management and fuel consumption. Your times remain stable throughout the stint - a crucial skill for actual races. The team wants to test your wheel-to-wheel skills next. Are you ready for combat training?",
+    "nextIds": [ 52, 53 ]
+  },
+  {
+    "id": 26,
+    "title": "Team Player",
+    "text": "You share your innovative racing line discovery with the engineers. They're fascinated and immediately begin analyzing the data. Your openness impresses the team principal, who sees championship potential in drivers who contribute to car development. This collaborative approach could define your F1 career. What's your next focus?",
+    "nextIds": [ 54, 55 ]
+  },
+  {
+    "id": 27,
+    "title": "Secret Weapon",
+    "text": "You keep your racing line discovery to yourself, planning to use it when it matters most. This competitive edge could be valuable in qualifying or during races. However, you notice the engineers are puzzled by your sector times. Do you eventually share the knowledge or continue keeping it secret?",
+    "nextIds": [ 56, 57 ]
+  },
+  {
+    "id": 28,
+    "title": "Wet Weather Warrior",
+    "text": "The rain simulation begins, and suddenly everything changes. Visibility drops, grip levels plummet, and you must completely relearn the track. Your first challenge: the racing line is no longer optimal. Do you stick to the dry line or explore the wet-weather racing line?",
+    "nextIds": [ 58, 59 ]
+  },
+  {
+    "id": 29,
+    "title": "Night Racing",
+    "text": "Under the bright lights of a night race simulation, the track looks completely different. Shadows and light patterns create new visual references. Your depth perception is challenged, especially at high speeds. Do you adjust your braking points conservatively or try to maintain your day-time pace?",
+    "nextIds": [ 60, 61 ]
+  },
+  {
+    "id": 30,
+    "title": "Aggressive Style",
+    "text": "You maintain your aggressive driving style, living on the edge through every corner. Your lap times are spectacular, but the car is constantly at its limit. The team loves your speed but worries about race day reliability. Suddenly, you're offered a chance to test with the actual F1 car. Do you accept?",
+    "nextIds": [ 62, 63 ]
+  },
+  {
+    "id": 31,
+    "title": "Balanced Approach",
+    "text": "You dial back the aggression slightly, finding the perfect balance between speed and control. Your consistency improves dramatically while maintaining competitive pace. This mature approach catches the attention of the team principal, who offers you a chance to participate in a genuine test session. Are you ready?",
+    "nextIds": [ 64, 65 ]
+  },
+  {
+    "id": 32,
+    "title": "Racecraft Training",
+    "text": "You enter the racecraft simulator where you'll practice overtaking, defending, and strategic racing. Your first scenario: you're approaching a slower car on the main straight with DRS enabled. The other driver is defending. Do you go for the inside line or try around the outside?",
+    "nextIds": [ 66, 67 ]
+  },
+  {
+    "id": 33,
+    "title": "Technical Deep Dive",
+    "text": "You continue studying the technical aspects, learning about aerodynamics, tire compounds, and setup changes. This knowledge will make you invaluable to the team's development program. The chief engineer is so impressed he invites you to a real engineering meeting. Do you attend or continue practical training?",
+    "nextIds": [ 68, 69 ]
+  },
+  {
+    "id": 34,
+    "title": "Corner Sequence Master",
+    "text": "You tackle the challenging Esses section, using your differential knowledge to rotate the car perfectly through the flowing corners. Your sector time improves dramatically! The team realizes you have natural technical understanding - a rare quality. They offer you specialized setup training. Interested?",
+    "nextIds": [ 70, 71 ]
+  },
+  {
+    "id": 35,
+    "title": "Overtaking Practice",
+    "text": "You practice overtaking maneuvers using your differential mastery. The ability to adjust the car's rotation mid-corner allows for creative passing moves that other drivers can't execute. Your instructor sets up increasingly difficult overtaking scenarios. Ready for the ultimate challenge?",
+    "nextIds": [ 72, 73 ]
+  },
+  {
+    "id": 36,
+    "title": "Head-to-Head Battle",
+    "text": "You accept the challenge from another driver - a current F2 champion who's also testing for F1 seats. The 10-lap battle begins, and your brake balance mastery immediately shows. You can out-brake him into every corner! Do you press your advantage or study his techniques?",
+    "nextIds": [ 74, 75 ]
+  },
+  {
+    "id": 37,
+    "title": "Solo Perfection",
+    "text": "You continue solo practice, using your brake balance skills to find the absolute limit of every corner. Your consistency is remarkable - every lap within a tenth of each other. The team principal watches your telemetry data with amazement. He has a special proposition for you...",
+    "nextIds": [ 76, 77 ]
+  },
+  {
+    "id": 38,
+    "title": "Building Speed",
+    "text": "You continue your methodical approach, shaving tenths off your lap time with each session. By the end of the day, you're within 1.5 seconds of the pole position time - extraordinary for a newcomer! The team offers you a contract to join their driver development program. Do you sign immediately or negotiate?",
+    "nextIds": [ 78, 79 ]
+  },
+  {
+    "id": 39,
+    "title": "Race Pace Focus",
+    "text": "You switch to race pace simulation, learning about tire degradation and fuel management. Your ability to maintain consistent times over long stints impresses everyone. The team principal mentions that consistency wins championships, not just raw speed. He hints at a possible seat for next season...",
+    "nextIds": [ 80, 81 ]
+  },
+  {
+    "id": 40,
+    "title": "Limit Pushing",
+    "text": "You continue pushing the absolute limits of the car and track. Your raw speed is undeniable, but you have several near-misses with the barriers. The team is torn between your incredible pace and concerns about racecraft. They decide to test your racecraft skills in traffic. Are you ready?",
+    "nextIds": [ 82, 83 ]
+  },
+  {
+    "id": 41,
+    "title": "Consistency Work",
+    "text": "You focus on consistency and race preparation. Your lap times become incredibly stable, and you learn proper tire management. This mature approach for such a young driver impresses the entire paddock. News of your testing spreads, and other teams start making inquiries...",
+    "nextIds": [ 84, 85 ]
+  },
+  {
+    "id": 42,
+    "title": "Defensive Driving",
+    "text": "You choose to defend your position aggressively at Monaco. Your racecraft shines as you hold off faster cars lap after lap. The narrow track works in your favor, and your defensive moves are perfectly legal and effective. By mid-race, you've gained the respect of your competitors and moved up to 6th place!",
+    "nextIds": [ 86, 87 ]
+  },
+  {
+    "id": 43,
+    "title": "Learning Mode",
+    "text": "You let the faster cars pass and follow them closely to learn their techniques. This humble approach pays dividends as you observe their braking points, racing lines, and racecraft. By the end of the simulation, your lap times have improved dramatically. The team loves your learning attitude!",
+    "nextIds": [ 88, 89 ]
+  },
+  {
+    "id": 44,
+    "title": "Early Braking",
+    "text": "You brake early for the chicane, prioritizing control over ultimate speed. This allows you to study the corner and understand the optimal approach. Your methodical style through Monza's challenging chicanes shows maturity. The team notes your professional approach to learning new circuits.",
+    "nextIds": [ 90, 91 ]
+  },
+  {
+    "id": 45,
+    "title": "Late Braking",
+    "text": "You brake late into the chicane, testing the absolute limits of the car's stopping power. It's a risky move that pays off - you nail the corner perfectly and gain valuable time. Your commitment to finding the limit impresses the watching engineers, but they wonder if you can maintain this precision under pressure.",
+    "nextIds": [ 92, 93 ]
+  },
+  {
+    "id": 46,
+    "title": "Monaco Confidence",
+    "text": "Your improved Monaco performance builds tremendous confidence. You've learned that respect for the track leads to speed, not the other way around. The team principal approaches with exciting news: they want you to test the actual F1 car at Monaco next week! Do you accept this incredible opportunity?",
+    "nextIds": [ 94, 95 ]
+  },
+  {
+    "id": 47,
+    "title": "Next Challenge",
+    "text": "Ready for a new challenge, you're offered a choice of three legendary circuits to master: the high-speed Monza, the technical Suzuka, or the unpredictable Interlagos. Each will teach you different skills essential for F1 success. Which circuit calls to you?",
+    "nextIds": [ 96, 97, 98 ]
+  },
+  {
+    "id": 48,
+    "title": "Weight Transfer Focus",
+    "text": "You focus on understanding weight transfer through Portimão's elevation changes. This knowledge transforms your driving, allowing you to manage the car's balance perfectly through crests and dips. Your sector times improve dramatically as you learn to work with the car's natural movements rather than fighting them.",
+    "nextIds": [ 99, 100 ]
+  },
+  {
+    "id": 49,
+    "title": "Racing Lines",
+    "text": "You explore different racing lines through Portimão's multiple apex corners. The wide track allows for various approaches, and you experiment with each one. Your adaptability impresses the team - the ability to use different lines is crucial for overtaking in real races.",
+    "nextIds": [ 99, 100 ]
+  },
+  {
+    "id": 50,
+    "title": "Ultimate Push",
+    "text": "You go for one final qualifying simulation lap. Everything must be perfect - braking points, racing lines, and courage through the high-speed corners. As you cross the finish line, the time flashes up: you're now just 0.8 seconds off pole position! The entire team erupts in celebration. You've just announced yourself to the F1 world!",
+    "nextIds": []
+  },
+  {
+    "id": 51,
+    "title": "Race Preparation",
+    "text": "You wisely preserve the car for race simulation work. Over the next hour, you complete a full race distance, managing tires and fuel while maintaining competitive pace. Your professional approach and race intelligence mark you as a future champion. The team immediately begins contract negotiations.",
+    "nextIds": []
+  },
+  {
+    "id": 52,
+    "title": "Combat Training",
+    "text": "You enter wheel-to-wheel combat simulation. Racing against AI drivers programmed with real F1 driver characteristics, you learn the art of racecraft. Your first lesson: how to defend position while maintaining racing speed. Your natural racing instincts shine through every battle.",
+    "nextIds": []
+  },
+  {
+    "id": 53,
+    "title": "Solo Mastery",
+    "text": "You continue perfecting your solo pace, becoming one with the car and track. Your consistency reaches professional levels - every lap within two-tenths of your best time. This reliability will be your trademark throughout your future F1 career. Teams are already calling about your services.",
+    "nextIds": []
+  },
+  {
+    "id": 54,
+    "title": "Development Driver",
+    "text": "Your collaborative approach with the engineers leads to a development driver role. You'll work closely with the technical team to improve the car's performance. This behind-the-scenes work is crucial for championship success and establishes you as more than just a driver - you're a complete competitor.",
+    "nextIds": []
+  },
+  {
+    "id": 55,
+    "title": "Pure Racer",
+    "text": "You focus purely on driving excellence, leaving the technical development to others. Your single-minded pursuit of speed and racecraft makes you a formidable competitor. While others worry about car setup, you simply adapt and drive faster than anyone thought possible.",
+    "nextIds": []
+  },
+  {
+    "id": 56,
+    "title": "Strategic Reveal",
+    "text": "After several sessions, you finally reveal your secret racing line to the engineers. The timing is perfect - they've been struggling with setup issues, and your discovery provides the breakthrough they needed. Your strategic thinking and technical contribution mark you as future championship material.",
+    "nextIds": []
+  },
+  {
+    "id": 57,
+    "title": "Competitive Edge",
+    "text": "You maintain your secret weapon, using it strategically when it matters most. During your final qualifying simulation, you deploy your special racing line and set a lap time that shocks everyone. Your ability to keep competitive advantages while still being a team player impresses all the right people.",
+    "nextIds": []
+  },
+  {
+    "id": 58,
+    "title": "Wet Weather Expert",
+    "text": "You master the wet-weather racing line, discovering the grip that exists off the traditional dry line. Your ability to find speed in treacherous conditions marks you as a special talent. Wet weather races often separate the good drivers from the great ones - and you're clearly in the latter category.",
+    "nextIds": []
+  },
+  {
+    "id": 59,
+    "title": "Dry Line Mastery",
+    "text": "You stick to the proven dry racing line but adapt your technique for wet conditions. Your consistency and technical precision in difficult conditions impresses everyone. While not the fastest in the wet, your reliability and intelligence make you the driver teams can count on when conditions deteriorate.",
+    "nextIds": []
+  },
+  {
+    "id": 60,
+    "title": "Night Race Specialist",
+    "text": "You adapt perfectly to night racing conditions, using the artificial lighting to your advantage. Your ability to maintain pace when other drivers struggle with visibility makes you incredibly valuable. Night races are becoming more common in F1, and you've just proven you'll excel in them.",
+    "nextIds": []
+  },
+  {
+    "id": 61,
+    "title": "Conservative Night Approach",
+    "text": "Your conservative approach to night racing shows maturity and intelligence. While your lap times are slightly slower, your consistency and safety-first mentality under challenging conditions impress the team management. They know they can trust you to bring the car home in any conditions.",
+    "nextIds": []
+  },
+  {
+    "id": 62,
+    "title": "Real F1 Test",
+    "text": "You accept the chance to drive the actual F1 car! As you climb into the cockpit of the multi-million dollar machine, your heart pounds. The engine fires up, and you feel the raw power that only 20 drivers in the world get to experience. Your first installation lap is perfect - you're born for this!",
+    "nextIds": []
+  },
+  {
+    "id": 63,
+    "title": "Simulator Mastery",
+    "text": "You decide to master every aspect of the simulator first. Your dedication and perfectionist approach means when you finally drive the real car, you'll be completely prepared. This methodical preparation becomes your trademark - always ready, always professional, always fast.",
+    "nextIds": []
+  },
+  {
+    "id": 64,
+    "title": "Test Session Ready",
+    "text": "Your balanced approach has perfectly prepared you for the real test session. When you climb into the F1 car, you feel completely comfortable. Your smooth, consistent driving style translates perfectly to the real machine. The team immediately recognizes they've found their future champion.",
+    "nextIds": []
+  },
+  {
+    "id": 65,
+    "title": "Simulator Excellence",
+    "text": "You continue perfecting your craft in the simulator, building a reputation for exceptional preparation and consistency. When you finally get your F1 chance, you'll be more ready than any driver in history. Your patient, professional approach sets you apart from other young drivers.",
+    "nextIds": []
+  },
+  {
+    "id": 66,
+    "title": "Inside Line Victory",
+    "text": "You choose the inside line for the overtake, using your superior braking performance to make the move stick. The other driver has no answer to your perfectly executed maneuver. Your racecraft instincts are exceptional - you instinctively know when and where to attack.",
+    "nextIds": []
+  },
+  {
+    "id": 67,
+    "title": "Outside Line Genius",
+    "text": "You take the daring outside line, using superior corner speed to complete the overtake around the outside. It's a move that requires tremendous skill and courage - exactly what F1 teams look for. Your ability to think differently and execute perfectly sets you apart.",
+    "nextIds": []
+  },
+  {
+    "id": 68,
+    "title": "Engineering Meeting",
+    "text": "You attend the engineering meeting and contribute valuable insights about car behavior and setup preferences. Your technical understanding combined with driving talent makes you incredibly valuable. The team realizes they have not just a fast driver, but a complete racing professional.",
+    "nextIds": []
+  },
+  {
+    "id": 69,
+    "title": "Practical Focus",
+    "text": "You focus on practical driving skills rather than engineering meetings. Your dedication to pure driving excellence pays off as you become incredibly consistent and fast. While others study data, you simply drive faster - a rare and valuable talent in modern F1.",
+    "nextIds": []
+  },
+  {
+    "id": 70,
+    "title": "Setup Specialist",
+    "text": "You accept the specialized setup training and learn to optimize the car for different conditions and circuits. This knowledge makes you incredibly valuable - you can extract maximum performance from any car setup. Teams will compete for your services.",
+    "nextIds": []
+  },
+  {
+    "id": 71,
+    "title": "Natural Talent",
+    "text": "You rely on your natural driving talent rather than deep technical knowledge. Your ability to simply drive around any car problems makes you incredibly valuable. While others need perfect setups, you can win with anything - the mark of a true champion.",
+    "nextIds": []
+  },
+  {
+    "id": 72,
+    "title": "Ultimate Challenge",
+    "text": "You accept the ultimate overtaking challenge - passing three cars in one sequence while they're all defending. Using every skill you've learned, you execute a series of moves that leaves everyone speechless. Your racecraft is already at championship level.",
+    "nextIds": []
+  },
+  {
+    "id": 73,
+    "title": "Measured Approach",
+    "text": "You take a measured approach to the overtaking challenges, learning each technique thoroughly before moving to the next. Your methodical style means you rarely make mistakes and always execute moves cleanly. This consistency will serve you well in your F1 career.",
+    "nextIds": []
+  },
+  {
+    "id": 74,
+    "title": "Dominant Victory",
+    "text": "You press your advantage and dominate the F2 champion completely. Your superior braking technique and racecraft leave him with no answers. Word spreads quickly through the paddock - there's a new talent who just embarrassed one of the sport's rising stars.",
+    "nextIds": []
+  },
+  {
+    "id": 75,
+    "title": "Learning Victory",
+    "text": "You win the battle while studying your opponent's techniques. This combination of speed and intelligence impresses everyone watching. You've proven you can win while constantly improving - the mark of a future world champion.",
+    "nextIds": []
+  },
+  {
+    "id": 76,
+    "title": "Special Proposition",
+    "text": "The team principal offers you an immediate contract as their reserve driver with guaranteed race opportunities next season. Your consistency and professionalism have convinced them you're ready for F1. You're about to become the youngest driver on the grid!",
+    "nextIds": []
+  },
+  {
+    "id": 77,
+    "title": "Solo Excellence",
+    "text": "Your solo perfection continues to amaze everyone. Lap after lap, you demonstrate supernatural consistency. The team realizes they have a driver who can execute perfect races - exactly what they need to challenge for championships.",
+    "nextIds": []
+  },
+  {
+    "id": 78,
+    "title": "Immediate Signing",
+    "text": "You sign the development contract immediately, officially beginning your journey to F1. The team commits to giving you extensive testing opportunities and a clear path to a race seat. Your dream is becoming reality faster than you ever imagined possible.",
+    "nextIds": []
+  },
+  {
+    "id": 79,
+    "title": "Contract Negotiation",
+    "text": "You negotiate the contract terms, showing business acumen to match your driving talent. Your mature approach to contract negotiations impresses the team management. You secure better terms and faster progression to a race seat - intelligence pays off both on and off track.",
+    "nextIds": []
+  },
+  {
+    "id": 80,
+    "title": "Championship Consistency",
+    "text": "Your focus on race pace and consistency marks you as championship material. The team principal privately tells you that consistency wins more championships than raw speed. He's already planning your integration into the race team for next season.",
+    "nextIds": []
+  },
+  {
+    "id": 81,
+    "title": "Future Champion",
+    "text": "The hint about a possible seat becomes reality as the team offers you a multi-year contract with a guaranteed race seat. Your professional approach and championship potential have convinced them to build their future around you. Welcome to Formula 1!",
+    "nextIds": []
+  },
+  {
+    "id": 82,
+    "title": "Traffic Master",
+    "text": "You accept the traffic challenge and immediately prove your racecraft skills. Passing backmarkers, defending from faster cars, and racing wheel-to-wheel comes naturally to you. Your ability to race in traffic at high speed marks you as special talent.",
+    "nextIds": []
+  },
+  {
+    "id": 83,
+    "title": "Speed Focus",
+    "text": "You continue focusing on pure speed rather than racecraft. Your lap times are simply extraordinary - faster than some current F1 drivers in similar conditions. The team decides that with speed like yours, racecraft can be learned. You're F1 bound!",
+    "nextIds": []
   }
 ]
