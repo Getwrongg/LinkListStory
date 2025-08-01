@@ -45,12 +45,25 @@ class Program
             Console.WriteLine(current.Text);
 
             if (current.NextLeft == null && current.NextRight == null)
+            {
                 break; // End of story
+            }
 
             Console.Write("Choice (left/right): ");
+
             string choice = Console.ReadLine()?.ToLower();
 
-            int? nextId = choice == "left" ? current.NextLeft : current.NextRight;
+            int? nextId;
+
+            if (choice == "left")
+            {
+                nextId = current.NextLeft;
+            }
+            else
+            {
+                nextId = current.NextRight;
+            }
+
             current = story.Find(s => s.Id == nextId);
 
             if (current == null)
@@ -60,4 +73,5 @@ class Program
             }
         }
     }
+}
 }
